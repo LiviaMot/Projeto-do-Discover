@@ -31,6 +31,7 @@
 /* Corpo */
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -184,4 +185,15 @@ footer a {
 footer a:hover {
   color: #9e3feb;
   opacity: 0.8;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(.assets/bg-desktop-light.jpg);
+  }
 }
